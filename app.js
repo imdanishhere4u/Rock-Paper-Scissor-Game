@@ -5,11 +5,13 @@ let userScoreJs= document.querySelector("#userScore");
 let resultJs=document.querySelector("#resultShow");
 let restartGame=document.querySelector("#reStart");
 let startGame=document.querySelector("#startgame");
+let roundLeft=document.querySelector("#roundShow");
 
 content.style.display = "none";
 score.style.display = "none";
 resultJs.style.display = "none";
 restartGame.style.display = "none";
+roundLeft.style.display="none";
 
 const choice = ["stone", "paper", "scissor"];
 
@@ -28,6 +30,7 @@ startGame.addEventListener("click",()=>{
    score.style.display = "flex";
    resultJs.style.display = "inline-block";
    restartGame.style.display = "inline-block";
+   roundLeft.style.display="inline-block";
 
   userScore=0;
   computerScore=0;
@@ -35,6 +38,7 @@ startGame.addEventListener("click",()=>{
 
   computerScoreJs.innerText=0;
   userScoreJs.innerText=0;
+  roundLeft.innerText = "Rounds Left: 10";
 
   resultJs.innerText="Let's Start Game !";
   resultJs.style.color="black";
@@ -102,7 +106,7 @@ restartGame.addEventListener("click",()=>{
 
   computerScoreJs.innerText=0;
   userScoreJs.innerText=0;
-
+  roundLeft.innerText = "Rounds Left: 10";
   resultJs.innerText="Again , Let's Start Game !";
   resultJs.style.color="black";
   resultJs.style.backgroundColor="white";
@@ -113,6 +117,7 @@ restartGame.addEventListener("click",()=>{
   score.style.display = "none";
   resultJs.style.display = "none";
   restartGame.style.display = "none";
+  roundLeft.style.display="none";
 
 });
 function game() {
@@ -129,6 +134,7 @@ function game() {
 
     Score();
     round++;
+    roundLeft.innerText=`Round : ${round} / ${maxRound}`
 
     if(round===maxRound){
   if(userScore>computerScore){
