@@ -75,3 +75,21 @@
     border-radius: 10px;
   }
 }
+.img{
+  cursor: pointer;
+  transition: transform 0.2 ease;
+}
+.img:hover{
+  transform: scale(1.08);
+}
+.restart{
+   cursor: pointer;
+  transition: transform 0.2 ease;
+}
+.restart:hover{
+  transform: scale(1.05);
+}
+.startGame{
+   cursor: pointer;
+  transition: transform 0.2 ease;
+}
