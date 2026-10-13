@@ -12,8 +12,8 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-top: 100px;
-  margin-bottom: 40px;
+  margin-top: 80px;
+  margin-bottom: 30px;
   .img{
     height: 165px;
     width: 165px;
@@ -28,12 +28,12 @@
   justify-content: center;
   gap: 60px;
   font-size: 40px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 #result{
+   margin-top: 100px;
   #resultShow{
     font-size: 30px;
-    margin-top: 100px;
     padding: 20px;
     background-color: white;
     color: black;
@@ -52,6 +52,23 @@
     color: white;
     font-size: 20px;
     background-color: red;
+    border-radius: 10px;
+  }
+}
+.startGame{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  #startgame{
+    display: inline-block;
+    font-size: 60px;
+    background-color: red;
+    color: black;
+    padding: 10px;
     border-radius: 10px;
   }
 }

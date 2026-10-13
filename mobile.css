@@ -1,0 +1,29 @@
+@media (max-width:450px)
+{
+  .content{
+    display: flex;
+    gap: 10px;
+    margin-top: 60px;
+    .img{
+      height: 80px;
+      width: 80px;
+    }
+  }
+  .score{
+    gap: 30px;
+    font-size: 30px;
+  }
+  #result{
+    margin-top: 60px;
+      margin-left: 10px;
+      margin-right: 10px;
+    #resultShow{
+      font-size: 20px;
+    }
+  }
+  .startGame{
+    #startgame{
+      font-size: 25px;
+    }
+  }
+}
